@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".activities.NuevoPisoActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/rellenarPiso"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColorHint="#000000"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtDireccionNuevoPiso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:ems="10"
+        android:hint="@string/direccion"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:paddingTop="5dp" />
+
+    <EditText
+        android:id="@+id/txtNumeroNuevoPiso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:ems="10"
+        android:hint="@string/numero"
+        android:inputType="number"
+        android:padding="10dp"
+        android:paddingTop="5dp" />
+
+    <EditText
+        android:id="@+id/txtCiudadNuevoPiso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:ems="10"
+        android:hint="@string/ciudad"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:paddingTop="5dp" />
+
+    <EditText
+        android:id="@+id/txtProvinciaNuevoPiso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:ems="10"
+        android:hint="@string/provincia"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:paddingTop="5dp" />
+
+    <EditText
+        android:id="@+id/txtCpNuevoPiso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:ems="10"
+        android:hint="@string/cp"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:paddingTop="5dp" />
+
+    <RatingBar
+        android:id="@+id/rtbValoracionNuevoPiso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:numStars="5"
+        android:padding="10dp"
+        android:paddingTop="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancelarNuevoPiso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="@string/cancelar" />
+
+        <Button
+            android:id="@+id/btnCrearNuevoPiso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="@string/crear" />
+    </LinearLayout>
+</LinearLayout>
